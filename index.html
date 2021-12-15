@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Tic Tac Toe</title>
+	<style type="text/css">
+		
+		#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
+			border: 2px solid whitesmoke;
+			height: 120px; }
+
+		#box1, #box2, #box3{
+			border-top-width: 0px;
+		}	
+
+		#box7, #box8, #box9{
+			border-bottom-width: 0px;
+		}
+
+		#box1, #box4, #box7{
+			border-left-width: 0px;
+		}
+
+		#box3, #box6, #box9{
+			border-right-width: 0px;
+		}
+
+		#player1, #winner, #player2{
+			border-radius: 10px;
+			color: whitesmoke;
+			background-color: black;
+		}
+
+		#winner{
+			visibility: hidden;
+		}
+		
+	</style>
+</head>
+<body class="bg-primary">
+
+	<div class="container p-5" style="height: 760px;">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col text-center">
+					<h1 id="player1" class="py-3">Player1 (X)</h1>
+				</div>
+				<div class="col text-center">
+					<h1 id="winner" class="py-3"></h1>
+				</div>
+				<div class="col text-center">
+					<h1 id="player2" class="py-3">Player2 (O)</h1>
+				</div>
+			</div>
+			
+			<div class="container my-5 p-5" style="background-color: rgb(0, 0, 0); border-radius: 20px;">
+
+				<div class="row px-5 mx-5">
+					<div id="box1" class="col ml-5 text-center text-light">
+					</div>
+					<div id="box2" class="col text-center text-light"></div>
+					<div id="box3" class="col mr-5 text-center text-light"></div>
+				</div>
+
+				<div class="row px-5 mx-5">
+					<div id="box4" class="col ml-5 text-center text-light"> </div>
+					<div id="box5" class="col text-center text-light"></div>
+					<div id="box6" class="col mr-5 text-center text-light"></div>
+				</div>
+
+				<div class="row px-5 mx-5">
+					<div id="box7" class="col ml-5 text-center text-light"></div>
+					<div id="box8" class="col text-center text-light"></div>
+					<div id="box9" class="col mr-5 text-center text-light"></div>
+				</div>
+
+			</div>
+
+			<div class="container text-center">
+				<button type="button" id="rematch">Rematch</button>
+			</div>
+
+		</div>
+	</div>
+<script src="index.js"></script>
+</body>
+</html>
